@@ -20,6 +20,7 @@ import org.eclipse.jface.viewers.StructuredSelection;
 import org.eclipse.ui.IWorkbenchPart;
 import org.eclipse.ui.IWorkbenchWindow;
 import org.jkiss.dbeaver.DBException;
+import org.jkiss.dbeaver.ext.postgresql.tasks.PostgreSQLTasks;
 import org.jkiss.dbeaver.model.struct.DBSObject;
 import org.jkiss.dbeaver.tasks.ui.wizard.TaskConfigurationWizardDialog;
 import org.jkiss.dbeaver.ui.navigator.NavigatorUtils;
@@ -38,7 +39,7 @@ public class PostgreToolRefreshMView implements IUserInterfaceTool
         TaskConfigurationWizardDialog.openNewTaskDialog(
                 window,
                 NavigatorUtils.getSelectedProject(),
-                "postgreToolRefreshMView",
+                PostgreSQLTasks.TASK_MVIEW_REFRESH,
                 new StructuredSelection(objects.toArray()));
     }
 }
