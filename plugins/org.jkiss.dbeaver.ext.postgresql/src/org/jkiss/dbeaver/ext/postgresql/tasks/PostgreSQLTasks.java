@@ -25,5 +25,7 @@ public class PostgreSQLTasks {
     public static final String TASK_MVIEW_REFRESH = "pgToolRefreshMView";
     public static final String TASK_DATABASE_ANALYZE = "pgToolDatabaseAnalyze";
     public static final String TASK_TABLE_ANALYZE = "pgToolTableAnalyze";
+    public static final String TASK_DATABASE_VACUUM = "pgToolDatabaseVacuum";
+    public static final String TASK_TABLE_VACUUM = "pgToolTableVacuum";
 
 }

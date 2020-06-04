@@ -16,6 +16,7 @@
  */
 package org.jkiss.dbeaver.ext.postgresql.tools.maintenance;
 
+import org.eclipse.jface.viewers.StructuredSelection;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
@@ -29,9 +30,12 @@ import org.jkiss.dbeaver.ext.postgresql.model.PostgreDataSource;
 import org.jkiss.dbeaver.ext.postgresql.model.PostgreDatabase;
 import org.jkiss.dbeaver.ext.postgresql.model.PostgreObject;
 import org.jkiss.dbeaver.ext.postgresql.model.PostgreTableBase;
+import org.jkiss.dbeaver.ext.postgresql.tasks.PostgreSQLTasks;
 import org.jkiss.dbeaver.model.DBPEvaluationContext;
 import org.jkiss.dbeaver.model.struct.DBSObject;
+import org.jkiss.dbeaver.tasks.ui.wizard.TaskConfigurationWizardDialog;
 import org.jkiss.dbeaver.ui.UIUtils;
+import org.jkiss.dbeaver.ui.navigator.NavigatorUtils;
 import org.jkiss.dbeaver.ui.tools.IUserInterfaceTool;
 import org.jkiss.utils.CommonUtils;
 
@@ -49,16 +53,22 @@ public class PostgreToolVacuum implements IUserInterfaceTool
     {
         List<PostgreTableBase> tables = CommonUtils.filterCollection(objects, PostgreTableBase.class);
         if (!tables.isEmpty()) {
-            SQLDialog dialog = new SQLDialog(activePart.getSite(), tables);
-            dialog.open();
+            TaskConfigurationWizardDialog.openNewTaskDialog(
+                    window,
+                    NavigatorUtils.getSelectedProject(),
+                    PostgreSQLTasks.TASK_TABLE_VACUUM,
+                    new StructuredSelection(objects.toArray()));
         } else {
             List<PostgreDatabase> databases = CommonUtils.filterCollection(objects, PostgreDatabase.class);
             if (!databases.isEmpty()) {
-                SQLDialog dialog = new SQLDialog(activePart.getSite(), databases.get(0));
-                dialog.open();
+                TaskConfigurationWizardDialog.openNewTaskDialog(
+                        window,
+                        NavigatorUtils.getSelectedProject(),
+                        PostgreSQLTasks.TASK_DATABASE_VACUUM,
+                        new StructuredSelection(objects.toArray()));
             }
         }
-    }
+    }/*
 
     static class SQLDialog extends TableToolDialog {
 
@@ -115,6 +125,6 @@ public class PostgreToolVacuum implements IUserInterfaceTool
 
             createObjectsSelector(parent);
         }
-    }
+    }*/
 
 }
