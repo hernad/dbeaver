@@ -922,7 +922,7 @@
                         categories="sql">
                 </driver>
 
-                <!-- MonetDB -->
+                <!-- MonetDB
                 <driver
                         id="monetdb"
                         label="MonetDB"
@@ -936,6 +936,7 @@
                         categories="sql,columns">
                     <file type="jar" path="maven:/monetdb:monetdb-jdbc:RELEASE"/>
                 </driver>
+                 -->
 
                 <!-- Dremio -->
 
@@ -987,7 +988,7 @@
                  </driver>
 
 
-                <!-- CrateDB -->
+                <!-- CrateDB 
 
                 <driver
                     id="cratedb"
@@ -1002,6 +1003,8 @@
                     categories="sql">
                     <file type="jar" path="maven:/io.crate:crate-jdbc:RELEASE"/>
                 </driver>
+
+                -->
 
                 <!-- FoundationDB
                 <driver
@@ -1438,6 +1441,7 @@
         </meta>
     </extension>
 
+    <!--
     <extension point="org.jkiss.dbeaver.mavenRepository">
         <repository id="monetdb-maven-repo" name="MonetDB Repository" url="https://clojars.org/repo/" order="20">
             <scope group="monetdb"/>
@@ -1445,6 +1449,7 @@
         <repository id="cratedb-maven-repo" name="CrateDB Repository" url="https://dl.bintray.com/crate/crate" order="21">
             <scope group="io.crate"/>
         </repository>
+    -->
 
 <!--
         <repository id="s3-maven-qubole-releases" name="Qubole Release Repository on S3" url="http://maven-qubole.s3-website-us-east-1.amazonaws.com/maven/release">
