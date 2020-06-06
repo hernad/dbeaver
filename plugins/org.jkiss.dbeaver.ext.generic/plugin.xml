@@ -1266,17 +1266,7 @@
                     <replace provider="generic" driver="firebird_jaybird"/>
                 </driver>
 
-                <driver
-                        id="vertica"
-                        label="Vertica"
-                        class="com.vertica.jdbc.Driver"
-                        sampleURL="jdbc:vertica://{host}:{port}/[{database}]"
-                        defaultPort="5433"
-                        webURL="http://www.vertica.com/"
-                        propertiesURL="https://my.vertica.com/docs/9.0.x/HTML/index.htm#Authoring/ConnectingToVertica/ClientJDBC/JDBCConnectionProperties.htm"
-                        description="Driver for Vertica Database">
-                </driver>
-
+                
                 <driver
                         id="exasol"
                         label="ExaSol"
