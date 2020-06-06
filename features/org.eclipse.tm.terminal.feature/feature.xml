@@ -13,9 +13,7 @@
       label="%featureName"
       version="10.0.0.qualifier"
       provider-name="%providerName"
-      plugin="org.eclipse.tm.terminal.view.core"
-      license-feature="org.eclipse.license"
-      license-feature-version="0.0.0">
+      plugin="org.eclipse.tm.terminal.view.core">
 
    <description>
       %description
@@ -30,9 +28,8 @@
    </license>
 
    <requires>
+      <import feature="org.jkiss.dbeaver.runtime.feature" version="1.0.0"/>
       <import feature="org.eclipse.tm.terminal.connector.local.feature"/>
-      <import feature="org.eclipse.tm.terminal.connector.ssh.feature"/>
-      <import feature="org.eclipse.tm.terminal.connector.telnet.feature"/>
       <import feature="org.eclipse.tm.terminal.control.feature"/>
       <import feature="org.eclipse.tm.terminal.view.feature"/>
    </requires>

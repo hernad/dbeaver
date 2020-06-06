@@ -17,6 +17,10 @@
         <module>org.jkiss.dbeaver.db.feature</module>
 
         <module>org.jkiss.dbeaver.net.sshj.feature</module>
+
+        <module>org.eclipse.tm.terminal.connector.local.feature</module>
+        <module>org.eclipse.tm.terminal.control.feature</module>
+        <module>org.eclipse.tm.terminal.feature</module>
     </modules>
 
     <profiles>
@@ -28,6 +32,7 @@
                 <module>org.jkiss.dbeaver.rcp.feature</module>
                 <module>org.jkiss.dbeaver.ui.feature</module>
                 <module>org.jkiss.dbeaver.debug.feature</module>
+                <module>org.eclipse.tm.terminal.view.feature</module>
 
                 <module>org.jkiss.dbeaver.db.ui.feature</module>
                 <module>org.jkiss.dbeaver.ide.feature</module>

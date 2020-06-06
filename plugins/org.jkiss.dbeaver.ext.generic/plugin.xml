@@ -171,32 +171,7 @@
 
                 <!-- Real drivers -->
 
-                <driver
-                        id="db2_iseries"
-                        label="DB2 iSeries/AS 400"
-                        icon="icons/db2_icon.png"
-                        iconBig="icons/db2_icon_big.png"
-                        category="DB2"
-                        class="com.ibm.as400.access.AS400JDBCDriver"
-                        sampleURL="jdbc:as400://{host};[libraries={database};]"
-                        defaultPort="446"
-                        description="DB2 iSeries/AS 400 driver"
-                        categories="sql">
-
-                    <file type="jar" path="maven:/net.sf.jt400:jt400:RELEASE" bundle="!drivers.jt400"/>
-
-                    <file type="license" path="drivers/db2-jt400/LICENSE.txt" bundle="drivers.jt400"/>
-                    <file type="jar" path="drivers/db2-jt400" bundle="drivers.jt400"/>
-
-                    <parameter name="query-get-active-db" value="SELECT CURRENT_SCHEMA FROM SYSIBM.SYSDUMMY1"/>
-                    <parameter name="query-set-active-db" value="SET SCHEMA ?"/>
-                    <parameter name="omit-catalog" value="true"/>
-                    <parameter name="schema-filters-enabled" value="false"/>
-
-                    <!-- Enable table/column descriptions -->
-                    <property name="translate binary" value="true"/>
-                    <property name="metadata source" value="0"/>
-                </driver>
+                
 
                 <driver
                     id="sap_maxdb"
@@ -1133,77 +1108,7 @@
                 </driver>
 
                 
-                <driver
-                        id="db2"
-                        label="DB2 LUW"
-                        icon="icons/db2_icon.png"
-                        iconBig="icons/db2_icon_big.png"
-                        category="DB2"
-                        class="com.ibm.db2.jcc.DB2Driver"
-                        sampleURL="jdbc:db2://{host}[:{port}]/{database}"
-                        defaultPort="50000"
-                        webURL="https://www.ibm.com/software/data/db2/express/download.html"
-                        description="DB2 JCC driver">
-
-                    <property name="loginTimeout" value="20"/>
-                    <property name="connectionTimeout" value="20"/>
-                    <property name="fullyMaterializeLobData" value="true"/>
-                    <property name="fullyMaterializeInputStreams" value="true"/>
-                    <property name="progressiveStreaming" value="2"/>
-                    <property name="retrieveMessagesFromServerOnGetMessage" value="true"/>
-
-                    <parameter name="query-get-active-db" value="SELECT CURRENT_SCHEMA FROM SYSIBM.SYSDUMMY1"/>
-                    <parameter name="query-set-active-db" value="SET SCHEMA ?"/>
-
-                    <fileSource url="https://www-304.ibm.com/support/docview.wss?rs=4020&amp;uid=swg21385217"
-                                name="DB2 10.5 GA drivers"
-                                instruction="Download JDBC (JCC) client driver. Extract downloaded archive and copy db2jcc4.jar in some directory. Then add db2jcc4.jar as a library in DBeaver driver editor dialog.">
-                        <file name="db2jcc4.jar" description="JDBC driver"/>
-                    </fileSource>
-                </driver>
-
-                <driver
-                        id="db2_luw_old"
-                        label="DB2 LUW (Old 8.x)"
-                        icon="icons/db2_icon.png"
-                        iconBig="icons/db2_icon_big.png"
-                        category="DB2"
-                        class="com.ibm.db2.jcc.DB2Driver"
-                        sampleURL="jdbc:db2://{host}[:{port}]/{database}"
-                        defaultPort="50000"
-                        webURL="https://www.ibm.com/software/data/db2/express/download.html"
-                        description="DB2 LUW driver for older DB2 versions (8.x)">
-                    <replace provider="generic" driver="db2"/>
-
-                    <property name="loginTimeout" value="20"/>
-                    <property name="connectionTimeout" value="20"/>
-                    <property name="fullyMaterializeLobData" value="true"/>
-                    <property name="fullyMaterializeInputStreams" value="true"/>
-                    <property name="progressiveStreaming" value="2"/>
-                    <property name="retrieveMessagesFromServerOnGetMessage" value="true"/>
-
-                    <parameter name="query-get-active-db" value="SELECT CURRENT_SCHEMA FROM SYSIBM.SYSDUMMY1"/>
-                    <parameter name="query-set-active-db" value="SET SCHEMA ?"/>
-
-                    <fileSource url="https://www-304.ibm.com/support/docview.wss?rs=4020&amp;uid=swg21385217"
-                                name="DB2 drivers"
-                                instruction="Download JDBC (JCC) client driver. Extract downloaded archive and copy db2jcc4.jar in some directory. Then add db2jcc4.jar as a library in DBeaver driver editor dialog.">
-                        <file name="db2jcc4.jar" description="JDBC driver"/>
-                    </fileSource>
-                    <file type="license" path="drivers/db2/LICENSE.txt" bundle="drivers.db2"/>
-                    <file type="jar" path="drivers/db2" bundle="drivers.db2"/>
-
-                </driver>
-                <driver
-                        id="db2_zos"
-                        label="DB2 z/OS"
-                        category="DB2"
-                        class="com.ibm.db2.jcc.DB2Driver"
-                        sampleURL="jdbc:db2://{host}[:{port}]/{database}"
-                        defaultPort="50000"
-                        description="DB2 z/OS driver"
-                        note="Deprecated.">
-                </driver>
+             
 
                 <driver
                         id="mssql"
