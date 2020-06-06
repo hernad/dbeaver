@@ -20,7 +20,6 @@
     <plugin id="org.jkiss.dbeaver.ext.db2" download-size="0" install-size="0" version="0.0.0" unpack="true"/>
     <plugin id="org.jkiss.dbeaver.ext.mysql" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
     <plugin id="org.jkiss.dbeaver.ext.mssql" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
-    <plugin id="org.jkiss.dbeaver.ext.oracle" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
     <plugin id="org.jkiss.dbeaver.ext.postgresql" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
 
     <plugin id="org.jkiss.dbeaver.ext.generic" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
@@ -40,7 +39,6 @@
     <plugin id="org.jkiss.dbeaver.ext.hana" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
     <plugin id="org.jkiss.dbeaver.ext.hive" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
     <plugin id="org.jkiss.dbeaver.ext.hsqldb" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
-    <plugin id="org.jkiss.dbeaver.ext.informix" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
     <plugin id="org.jkiss.dbeaver.ext.kognitio" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
     <plugin id="org.jkiss.dbeaver.ext.netezza" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
     <plugin id="org.jkiss.dbeaver.ext.opendistro" download-size="0" install-size="0" version="0.0.0" unpack="false"/>

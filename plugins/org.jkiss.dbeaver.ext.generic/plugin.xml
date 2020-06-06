@@ -217,31 +217,7 @@
                     <parameter name="query-get-active-db" value="SELECT CURRENT_SCHEMA FROM DUAL"/>
                     <parameter name="query-set-active-db" value="SET CURRENT_SCHEMA = ?"/>
                 </driver>
-                <driver
-                    id="informix"
-                    label="Informix"
-                    icon="icons/informix_icon.png"
-                    iconBig="icons/informix_icon_big.png"
-                    class="com.informix.jdbc.IfxDriver"
-                    sampleURL="jdbc:informix-sqli://{host}:{port}/{database}:INFORMIXSERVER={server}"
-                    defaultPort="1533"
-                    webURL="https://www.developers.net/ibmshowcase/focus/Informix"
-                    description="IBM Informix Dynamic Server"
-                    categories="sql">
-
-                    <file type="jar" path="repo:/drivers/informix/ifxjdbc.jar" bundle="!drivers.informix"/>
-                    <file type="jar" path="repo:/drivers/informix/ifxlang.jar" bundle="!drivers.informix"/>
-                    <file type="license" path="repo:/drivers/informix/LICENSE.txt" bundle="!drivers.informix"/>
-
-                    <file type="jar" path="drivers/informix" bundle="drivers.informix"/>
-                    <file type="license" path="drivers/informix/LICENSE.txt" bundle="drivers.informix"/>
-
-                    <parameter name="query-get-active-db" value="SELECT ODB_DBName FROM SysMaster:informix.SysOpenDB WHERE ODB_IsCurrent = 'Y' AND ODB_SessionID = DBINFO('sessionid')"/>
-                    <parameter name="query-set-active-db" value="DATABASE ?"/>
-                    <parameter name="legacy-sql-dialect" value="true"/>
-
-                    <property name="@dbeaver-default-resultset.column.label.ignore" value="true"/>
-                </driver>
+               
                 <driver
                     id="h2_server"
                     label="H2 Server"
@@ -1153,24 +1129,7 @@
                         description="PostgreSQL standard JDBC driver. Replaced by PostgreSQL extension driver.">
                 </driver>
 
-                <driver
-                        id="oracle"
-                        label="Oracle"
-                        class="oracle.jdbc.OracleDriver"
-                        sampleURL="jdbc:oracle:thin:@{host}[:{port}]/{database}"
-                        defaultPort="1521"
-                        webURL="https://www.oracle.com/technetwork/database/features/jdbc/"
-                        description="Oracle thin driver">
-
-                    <parameter name="query-get-active-db" value="select sys_context( 'userenv', 'current_schema' ) from dual"/>
-                    <parameter name="query-set-active-db" value="alter session set current_schema=?"/>
-
-                    <fileSource url="https://www.oracle.com/technetwork/apps-tech/jdbc-112010-090769.html" name="Oracle 11g drivers">
-                        <file name="ojdbc6.jar" description="JDBC driver"/>
-                        <file name="orai18n.jar" description="NLS classes"/>
-                        <file name="xdb6.jar" description="SQLXML support"/>
-                    </fileSource>
-                </driver>
+                
                 <driver
                         id="db2"
                         label="DB2 LUW"

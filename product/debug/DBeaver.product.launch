@@ -250,7 +250,6 @@
         <setEntry value="org.jkiss.dbeaver.ext.hive@default:default"/>
         <setEntry value="org.jkiss.dbeaver.ext.hsqldb@default:default"/>
         <setEntry value="org.jkiss.dbeaver.ext.import_config@default:default"/>
-        <setEntry value="org.jkiss.dbeaver.ext.informix@default:default"/>
         <setEntry value="org.jkiss.dbeaver.ext.kognitio@default:default"/>
         <setEntry value="org.jkiss.dbeaver.ext.mssql.ui@default:default"/>
         <setEntry value="org.jkiss.dbeaver.ext.mssql@default:default"/>
@@ -259,8 +258,6 @@
         <setEntry value="org.jkiss.dbeaver.ext.netezza@default:default"/>
         <setEntry value="org.jkiss.dbeaver.ext.ocient@default:default"/>
         <setEntry value="org.jkiss.dbeaver.ext.opendistro@default:default"/>
-        <setEntry value="org.jkiss.dbeaver.ext.oracle.ui@default:default"/>
-        <setEntry value="org.jkiss.dbeaver.ext.oracle@default:default"/>
         <setEntry value="org.jkiss.dbeaver.ext.phoenix@default:default"/>
         <setEntry value="org.jkiss.dbeaver.ext.postgresql.debug.core@default:default"/>
         <setEntry value="org.jkiss.dbeaver.ext.postgresql.debug.ui@default:default"/>
