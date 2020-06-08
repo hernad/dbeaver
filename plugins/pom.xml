@@ -13,6 +13,10 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>org.eclipse.cdt.core.win32.x86_64</module>
+        <module>org.eclipse.cdt.core.win32</module>
+        <module>org.eclipse.cdt.core.native</module>
+        <module>org.eclipse.tm.terminal.connector.local</module>
         <module>org.eclipse.tm.terminal.connector.process</module>
         <module>org.eclipse.tm.terminal.control</module>
         <module>org.eclipse.tm.terminal.view.core</module>

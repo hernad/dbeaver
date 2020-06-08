@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %fragmentName.linux
+Bundle-SymbolicName: org.eclipse.cdt.core.linux; singleton:=true
+Bundle-Version: 10.0.1.qualifier
+Bundle-Vendor: %providerName
+Fragment-Host: org.eclipse.cdt.core.native
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Eclipse-PlatformFilter: (osgi.os=linux)
+Automatic-Module-Name: org.eclipse.cdt.core.linux

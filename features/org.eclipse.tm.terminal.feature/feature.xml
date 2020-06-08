@@ -27,7 +27,6 @@
    </license>
 
    <requires>
-      <import feature="org.eclipse.tm.terminal.connector.local.feature"/>
       <import feature="org.eclipse.tm.terminal.control.feature"/>
       <import feature="org.eclipse.tm.terminal.view.feature"/>
    </requires>

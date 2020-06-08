@@ -45,7 +45,7 @@ public class NewTerminalViewAction extends AbstractTerminalAction {
 		super(null, NewTerminalViewAction.class.getName(), IAction.AS_PUSH_BUTTON);
 
 		//this.view = view;
-		System.out.println("Novi terminal"); //$NON-NLS-1$
+		
 		setupAction(Messages.NewTerminalViewAction_menu, Messages.NewTerminalViewAction_tooltip,
 				UIPlugin.getImageDescriptor(ImageConsts.ACTION_NewTerminalView_Hover),
 				UIPlugin.getImageDescriptor(ImageConsts.ACTION_NewTerminalView_Enabled),
@@ -58,6 +58,9 @@ public class NewTerminalViewAction extends AbstractTerminalAction {
 		ICommandService service = PlatformUI.getWorkbench().getService(ICommandService.class);
 		Command command = service != null ? service.getCommand("org.eclipse.tm.terminal.view.ui.command.newview") //$NON-NLS-1$
 				: null;
+		
+		System.out.println("tttttttttttttttttttttttttttttt"); //$NON-NLS-1$
+
 		if (command != null && command.isDefined() && command.isEnabled()) {
 			try {
 				ParameterizedCommand pCmd = ParameterizedCommand.generateCommand(command, null);

@@ -62,10 +62,8 @@
     <plugin id="org.apache.commons.cli" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
 
 
-    <includes id="org.eclipse.tm.terminal.feature" version="0.0.0"/>
-    <includes id="org.eclipse.tm.terminal.connector.local.feature" version="0.0.0"/>
-    <includes id="org.eclipse.tm.terminal.control.feature" version="0.0.0"/>
     <includes id="org.eclipse.tm.terminal.view.feature" version="0.0.0"/>
+    <includes id="org.eclipse.tm.terminal.connector.local.feature" version="0.0.0" match="greaterOrEqual" />
 
 
 </feature>

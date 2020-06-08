@@ -36,7 +36,6 @@
                                 <macosx>DBeaver.app</macosx>
                                 <win32>dbeaver</win32>
                                 <linux>dbeaver</linux>
-                                <solaris>dbeaver</solaris>
                             </rootFolders>
                         </product>
                     </products>

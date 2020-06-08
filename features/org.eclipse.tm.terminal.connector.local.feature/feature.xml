@@ -17,7 +17,8 @@
       id="org.eclipse.tm.terminal.connector.local.feature"
       label="%featureName"
       version="10.0.1.qualifier"
-      provider-name="%providerName">
+      provider-name="%providerName" 
+      plugin="org.eclipse.tm.terminal.connector.local">
      
    <description>
       %description
@@ -35,10 +36,9 @@
       <import plugin="org.eclipse.core.expressions"/>
       <import plugin="org.eclipse.core.runtime"/>
       <import plugin="org.eclipse.core.variables"/>
-      <import plugin="org.eclipse.tm.terminal.connector.process"/>
       <import plugin="org.eclipse.tm.terminal.connector.local"/>
-      <import plugin="org.eclipse.tm.terminal.control"/>
-      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.tm.terminal.connector.process"/>
+      <import plugin="org.eclipse.cdt.core.native"/>
    </requires>
 
    <plugin
@@ -54,12 +54,54 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-
-   <plugin
-         id="org.eclipse.tm.terminal.control"
+   
+    <plugin
+         id="org.eclipse.cdt.core.native"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+
+<!--
+     <plugin
+         id="org.eclipse.cdt.core.linux"
+         os="linux"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         fragment="true"
+         unpack="false"/>
+
+   
+     <plugin
+         id="org.eclipse.cdt.core.linux.x86_64"
+         os="linux"
+         arch="x86_64"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         fragment="true"
+         unpack="false"/>
+
+-->
+
+     <plugin
+         id="org.eclipse.cdt.core.win32"
+         os="win32"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         fragment="true"
+         unpack="false"/>
+
+
+     <plugin
+         id="org.eclipse.cdt.core.win32.x86_64"
+         os="win32"
+         arch="x86_64"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         fragment="true"/>
 
 </feature>

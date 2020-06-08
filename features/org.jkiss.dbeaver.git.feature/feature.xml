@@ -18,7 +18,7 @@
    </license>
 
    <requires>
-      <import feature="org.eclipse.egit" version="1.0.0"/>
+      <import feature="org.eclipse.egit" version="0.0.0"/>
    </requires>
 
 <!--

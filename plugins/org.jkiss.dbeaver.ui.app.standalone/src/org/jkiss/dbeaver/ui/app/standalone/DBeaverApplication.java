@@ -215,6 +215,9 @@ public class DBeaverApplication extends BaseApplicationImpl {
         log.debug("Instance path: '" + instanceLoc.getURL() + "'"); //$NON-NLS-1$ //$NON-NLS-2$
         log.debug("Memory available " + (runtime.totalMemory() / (1024 * 1024)) + "Mb/" + (runtime.maxMemory() / (1024 * 1024)) + "Mb");
 
+        //log.debug("============== hernad ============================"); //$NON-NLS-1$
+        //System.out.println("hhhhhhhhhhhhhhhhhhhhhhh");
+        
         // Write version info
         writeWorkspaceInfo();
 

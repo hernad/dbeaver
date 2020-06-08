@@ -15,14 +15,12 @@
     <modules>
         <module>org.jkiss.dbeaver.runtime.feature</module>
         <module>org.jkiss.dbeaver.db.feature</module>
-
         <module>org.jkiss.dbeaver.net.sshj.feature</module>
 
         <module>org.eclipse.tm.terminal.connector.local.feature</module>
         <module>org.eclipse.tm.terminal.control.feature</module>
         <module>org.eclipse.tm.terminal.feature</module>
         <module>org.eclipse.tm.terminal.view.feature</module>
-
     </modules>
 
     <profiles>

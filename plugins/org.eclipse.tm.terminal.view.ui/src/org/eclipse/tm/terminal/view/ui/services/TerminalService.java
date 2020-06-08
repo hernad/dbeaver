@@ -252,6 +252,8 @@ public class TerminalService implements ITerminalService {
 		Assert.isNotNull(properties);
 		final boolean restoringView = fRestoringView;
 
+		//System.out.println("ttttttttttttttttttttttttttttopennnnnnnnnnnnnn") ; //$NON-NLS-1$
+
 		executeServiceOperation(properties, new TerminalServiceRunnable() {
 			@Override
 			@SuppressWarnings("synthetic-access")

@@ -9,14 +9,18 @@
     <feature id="org.jkiss.dbeaver.ui.feature">
         <category name="org.jkiss.dbeaver"/>
     </feature>
+    
     <feature id="org.jkiss.dbeaver.runtime.feature">
         <category name="org.jkiss.dbeaver"/>
     </feature>
+    
     <feature id="org.jkiss.dbeaver.db.feature">
         <category name="org.jkiss.dbeaver"/>
     </feature>
+
     <feature id="org.jkiss.dbeaver.db.ui.feature">
         <category name="org.jkiss.dbeaver"/>
     </feature>
 
+    
 </site>
