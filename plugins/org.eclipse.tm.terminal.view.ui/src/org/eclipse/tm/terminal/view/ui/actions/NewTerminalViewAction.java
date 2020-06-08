@@ -11,6 +11,7 @@
  *******************************************************************************/
 package org.eclipse.tm.terminal.view.ui.actions;
 
+import java.lang.System;
 import org.eclipse.core.commands.Command;
 import org.eclipse.core.commands.ParameterizedCommand;
 import org.eclipse.core.runtime.Assert;
@@ -26,6 +27,7 @@ import org.eclipse.tm.terminal.view.ui.nls.Messages;
 import org.eclipse.ui.PlatformUI;
 import org.eclipse.ui.commands.ICommandService;
 import org.eclipse.ui.handlers.IHandlerService;
+
 
 /**
  * Opens a new terminal view with a new secondary view ID.
@@ -43,6 +45,7 @@ public class NewTerminalViewAction extends AbstractTerminalAction {
 		super(null, NewTerminalViewAction.class.getName(), IAction.AS_PUSH_BUTTON);
 
 		//this.view = view;
+		System.out.println("Novi terminal"); //$NON-NLS-1$
 		setupAction(Messages.NewTerminalViewAction_menu, Messages.NewTerminalViewAction_tooltip,
 				UIPlugin.getImageDescriptor(ImageConsts.ACTION_NewTerminalView_Hover),
 				UIPlugin.getImageDescriptor(ImageConsts.ACTION_NewTerminalView_Enabled),

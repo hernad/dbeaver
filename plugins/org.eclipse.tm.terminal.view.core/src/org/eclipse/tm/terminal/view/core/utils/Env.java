@@ -60,8 +60,10 @@ public class Env {
 		// the cached environment
 		Map<String, String> env = new LinkedHashMap<String, String>(nativeEnv);
 		// Set the TERM environment variable if in terminal mode
-		if (terminal)
+		if (terminal) {
 			env.put("TERM", "xterm"); //$NON-NLS-1$ //$NON-NLS-2$
+			env.put("LINES", "25"); //$NON-NLS-1$ //$NON-NLS-2$
+		}
 
 		// On Windows, the environment variable names are not case-sensitive. However,
 		// we desire to preserve the original case. Build up a translation map between

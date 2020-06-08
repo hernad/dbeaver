@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
 
     <properties>
-        <dbeaver-version>7.1.0</dbeaver-version>
+        <dbeaver-version>7.1.1</dbeaver-version>
         <dbeaver-product>DBeaver</dbeaver-product>
         <tycho-version>1.7.0</tycho-version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -88,6 +88,17 @@
                         </environment>
                         -->
                     </environments>
+
+                    <dependency-resolution>
+                    <extraRequirements>
+                        <requirement>
+                            <type>eclipse-plugin</type>
+                            <id>org.eclipse.equinox.event</id>
+                            <versionRange>0.0.0</versionRange>
+                        </requirement>
+                    </extraRequirements>
+                   </dependency-resolution>
+
 
                 </configuration>
 
@@ -169,6 +180,7 @@
                 </executions>
             </plugin>
 
+
         </plugins>
 
     </build>
@@ -193,7 +205,7 @@
                 <module>test</module>
 
                 <!-- Products -->
-                <module>product/appstore</module>
+                <!-- <module>product/appstore</module> -->
                 <module>product/standalone</module>
                 <module>product/repositories</module>
             </modules>

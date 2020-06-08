@@ -9,6 +9,6 @@
     <relativePath>../../</relativePath>
   </parent>
   <artifactId>org.eclipse.tm.terminal.view.feature</artifactId>
-  <version>10.0.0-SNAPSHOT</version>
+  <version>10.0.1-SNAPSHOT</version>
   <packaging>eclipse-feature</packaging>
 </project>

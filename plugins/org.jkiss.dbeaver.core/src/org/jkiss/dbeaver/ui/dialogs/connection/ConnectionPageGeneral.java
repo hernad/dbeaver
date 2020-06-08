@@ -65,7 +65,6 @@ class ConnectionPageGeneral extends ConnectionWizardPage {
         final String title;
         Link link;
         DBSObjectFilter filter;
-
         private FilterInfo(Class<?> type, String title) {
             this.type = type;
             this.title = title;

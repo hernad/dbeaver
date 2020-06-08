@@ -15,6 +15,8 @@
     <modules>
         <module>org.eclipse.tm.terminal.connector.process</module>
         <module>org.eclipse.tm.terminal.control</module>
+        <module>org.eclipse.tm.terminal.view.core</module>
+        <module>org.eclipse.tm.terminal.view.ui</module>
 
         <module>org.jkiss.dbeaver.model</module>
         <module>org.jkiss.dbeaver.model.sql</module>

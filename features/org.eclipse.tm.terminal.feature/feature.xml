@@ -11,9 +11,8 @@
 <feature
       id="org.eclipse.tm.terminal.feature"
       label="%featureName"
-      version="10.0.0.qualifier"
-      provider-name="%providerName"
-      plugin="org.eclipse.tm.terminal.view.core">
+      version="10.0.1.qualifier"
+      provider-name="%providerName">
 
    <description>
       %description
@@ -28,7 +27,6 @@
    </license>
 
    <requires>
-      <import feature="org.jkiss.dbeaver.runtime.feature" version="1.0.0"/>
       <import feature="org.eclipse.tm.terminal.connector.local.feature"/>
       <import feature="org.eclipse.tm.terminal.control.feature"/>
       <import feature="org.eclipse.tm.terminal.view.feature"/>

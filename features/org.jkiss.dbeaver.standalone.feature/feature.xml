@@ -2,7 +2,7 @@
 <feature
         id="org.jkiss.dbeaver.standalone.feature"
         label="%featureName"
-        version="7.1.0.qualifier"
+        version="7.1.1.qualifier"
         provider-name="%providerName"
         plugin="org.jkiss.dbeaver.ui.app.standalone">
 
@@ -63,10 +63,9 @@
 
 
     <includes id="org.eclipse.tm.terminal.feature" version="0.0.0"/>
-    <!--
     <includes id="org.eclipse.tm.terminal.connector.local.feature" version="0.0.0"/>
     <includes id="org.eclipse.tm.terminal.control.feature" version="0.0.0"/>
     <includes id="org.eclipse.tm.terminal.view.feature" version="0.0.0"/>
-    -->
+
 
 </feature>

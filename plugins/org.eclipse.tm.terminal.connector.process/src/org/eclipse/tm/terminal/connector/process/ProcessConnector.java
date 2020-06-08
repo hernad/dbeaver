@@ -71,7 +71,6 @@ public class ProcessConnector extends AbstractStreamsConnector {
 	 */
 	public ProcessConnector(ProcessSettings settings) {
 		super();
-
 		Assert.isNotNull(settings);
 		this.settings = settings;
 	}
