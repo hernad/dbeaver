@@ -17,6 +17,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 import org.eclipse.cdt.utils.pty.PTY.MasterFD;
+import java.nio.file.Paths;
 
 public class PTYOutputStream extends OutputStream {
 
@@ -105,6 +106,9 @@ public class PTYOutputStream extends OutputStream {
 		try {
 			System.loadLibrary("pty"); //$NON-NLS-1$
 		} catch (UnsatisfiedLinkError e) {
+			System.out.println(System.getProperty("java.library.path")); //$NON-NLS-1$
+			System.out.println("Current directory [3]: " + Paths.get(".").toAbsolutePath().normalize().toString()); //$NON-NLS-1$ //$NON-NLS-2$
+			
 			e.printStackTrace(System.err);
 		}
 	}

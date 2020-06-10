@@ -167,6 +167,7 @@ public class TextCanvas extends GridCanvas {
 					if (pt != null) {
 						for (ITerminalMouseListener l : fMouseListeners) {
 							l.mouseDown(fCellCanvasModel.getTerminalText(), pt.y, pt.x, e.button);
+							System.out.println("mouse down y=" + Integer.toString(pt.y) + " : x="  + Integer.toString(pt.x) );
 						}
 					}
 				}
@@ -187,6 +188,7 @@ public class TextCanvas extends GridCanvas {
 					if (pt != null) {
 						for (ITerminalMouseListener l : fMouseListeners) {
 							l.mouseUp(fCellCanvasModel.getTerminalText(), pt.y, pt.x, e.button);
+							System.out.println("mouse up y=" + Integer.toString(pt.y) + " : x="  + Integer.toString(pt.x) );
 						}
 					}
 				}

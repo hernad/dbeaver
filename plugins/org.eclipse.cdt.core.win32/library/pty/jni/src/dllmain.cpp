@@ -1,9 +1,9 @@
 // dllmain.cpp : Defines the entry point for the DLL application.
 #include <windows.h>
-#include <delayimp.h>
+//#include <delayimp.h>
 #include <assert.h>
  
-#pragma comment(lib, "delayimp")
+//#pragma comment(lib, "delayimp")
 
 BOOL APIENTRY DllMain( HMODULE hModule,
                        DWORD  ul_reason_for_call,
@@ -61,11 +61,12 @@ HMODULE PTYExplicitLoadLibrary( LPCSTR pszModuleName )
   return NULL;
 }
 
+/*
 FARPROC WINAPI PTYDliNotifyHook( unsigned dliNotify, PDelayLoadInfo pdli )
 {
   if( dliNotify == dliNotePreLoadLibrary )
     return (FARPROC)PTYExplicitLoadLibrary( pdli->szDll );
   return NULL;
 }
-
+*/
 //extern "C" PfnDliHook __pfnDliNotifyHook2 = PTYDliNotifyHook;

@@ -22,6 +22,10 @@ import org.eclipse.cdt.internal.core.natives.Messages;
 import org.eclipse.cdt.utils.spawner.Spawner;
 import org.eclipse.core.runtime.Platform;
 
+import java.nio.file.Paths;
+import org.osgi.framework.Bundle;
+import org.eclipse.core.runtime.IPath;
+
 /**
  * PTY - pseudo terminal support.
  */
@@ -260,6 +264,8 @@ public class PTY {
 
 	static {
 		try {
+			// https://stackoverflow.com/questions/2535700/loading-dll-in-java-eclipse-jni
+			System.loadLibrary("winpty"); //$NON-NLS-1$
 			System.loadLibrary("pty"); //$NON-NLS-1$
 			hasPTY = true;
 			isWinPTY = Platform.OS_WIN32.equals(Platform.getOS());
@@ -271,6 +277,11 @@ public class PTY {
 			// Comment out it worries the users too much
 			//CCorePlugin.log(e);
 		} catch (UnsatisfiedLinkError e) {
+			System.out.println("Current directory [1]: " + Paths.get(".").toAbsolutePath().normalize().toString()); //$NON-NLS-1$ //$NON-NLS-2$
+			System.out.println(System.getProperty("java.library.path")); //$NON-NLS-1$
+			Bundle bundle = Platform.getBundle("org.eclipse.cdt.core.win32.x86_64");
+            IPath bundlePath = Platform.getStateLocation(bundle);
+			System.out.println("Bundle path: " + bundlePath.toFile().getAbsolutePath()); //$NON-NLS-1$
 			e.printStackTrace(System.err);
 			// Comment out it worries the users too much
 			//CCorePlugin.log(e);

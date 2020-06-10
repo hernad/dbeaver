@@ -561,6 +561,8 @@ void winpty_close(winpty_t *pc)
 
 int winpty_set_console_mode(winpty_t *pc, int mode)
 {
+    printf("winpty_set_console_mode %d\n", mode);
+    return 0;
     auto packet = newPacket();
     packet.putInt32(AgentMsg::SetConsoleMode);
     packet.putInt32(mode);

@@ -43,8 +43,8 @@ JNIEXPORT jstring JNICALL Java_org_eclipse_cdt_utils_pty_PTY_openMaster(JNIEnv *
 
 	line[0] = '\0';
 
-    printf("pty: open master\n");
-    return NULL;
+    //printf("pty: open master\n");
+    //return NULL;
 
 	/* Open new winpty handle */
 	winpty_t* winpty = winpty_open(80, 40);
@@ -96,8 +96,8 @@ JNIEXPORT jint JNICALL Java_org_eclipse_cdt_utils_pty_PTY_change_1window_1size(J
     int fd;
     std::map<int, winpty_t*> :: const_iterator fd2pty_Iter;
 
-    printf("pty: change_1window_1size\n");
-    return NULL;
+    //printf("pty: change_1window_1size\n");
+    //return NULL;
 
     fd = fdm;
     fd2pty_Iter = fd2pty.find(fd);
@@ -123,8 +123,8 @@ JNIEXPORT jint JNICALL Java_org_eclipse_cdt_utils_pty_PTYInputStream_read0
     int fd;
     std::map<int, winpty_t*> :: const_iterator fd2pty_Iter;
 
-    printf("pty: PTYInputStream_read0\n");
-    return NULL;
+    //printf("pty: PTYInputStream_read0\n");
+    //return NULL;
 
     fd = jfd;
     fd2pty_Iter = fd2pty.find(fd);
@@ -181,8 +181,8 @@ JNIEXPORT jint JNICALL Java_org_eclipse_cdt_utils_pty_PTYInputStream_close0(JNIE
     int fd;
     std::map<int, winpty_t*> :: iterator fd2pty_Iter;
 
-    printf("pty: PTYInputStream_close0\n");
-    return NULL;
+    //printf("pty: PTYInputStream_close0\n");
+    //return NULL;
 
     fd = jfd;
     fd2pty_Iter = fd2pty.find(fd);
@@ -210,8 +210,8 @@ JNIEXPORT jint JNICALL Java_org_eclipse_cdt_utils_pty_PTYOutputStream_write0(JNI
     int fd;
     std::map<int, winpty_t*> :: iterator fd2pty_Iter;
 
-    printf("pty: PTYOutputStream_write0\n");
-    return NULL;
+    //printf("pty: PTYOutputStream_write0\n");
+    //return NULL;
 
     fd = jfd;
     fd2pty_Iter = fd2pty.find(fd);
@@ -255,8 +255,8 @@ JNIEXPORT jint JNICALL Java_org_eclipse_cdt_utils_pty_PTYOutputStream_close0(JNI
     int fd;
     std::map<int, winpty_t*> :: iterator fd2pty_Iter;
 
-    printf("pty: PTYOutputStream_close0\n");
-    return NULL;
+    //printf("pty: PTYOutputStream_close0\n");
+    //return NULL;
 
     fd = jfd;
     fd2pty_Iter = fd2pty.find(fd);
@@ -339,8 +339,8 @@ JNIEXPORT jint JNICALL Java_org_eclipse_cdt_utils_pty_PTY_exec2
     int fd;
     std::map<int, winpty_t*> :: iterator fd2pty_Iter;
 
-    printf("pty: exec2\n");
-    return NULL;
+    //printf("pty: exec2\n");
+    //return NULL;
 
     jint *channels = env->GetIntArrayElements(jchannels, 0);
     const wchar_t *cwdW = (const wchar_t *) env->GetStringChars(jdir, NULL);
@@ -417,8 +417,8 @@ JNIEXPORT jint JNICALL Java_org_eclipse_cdt_utils_pty_PTY_waitFor
     int status = -1;
     DWORD flags;
 
-    printf("pty: waitFor\n");
-    return NULL;
+    //printf("pty: waitFor\n");
+    //return NULL;
 
     int fd;
     std::map<int, winpty_t*> :: iterator fd2pty_Iter;
