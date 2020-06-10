@@ -267,9 +267,11 @@ public class PTY {
 			// to enable it, set system property org.eclipse.cdt.core.winpty_console_mode=true
 			isConsoleModeSupported = !isWinPTY || Boolean.getBoolean("org.eclipse.cdt.core.winpty_console_mode"); //$NON-NLS-1$
 		} catch (SecurityException e) {
+			e.printStackTrace(System.err);
 			// Comment out it worries the users too much
 			//CCorePlugin.log(e);
 		} catch (UnsatisfiedLinkError e) {
+			e.printStackTrace(System.err);
 			// Comment out it worries the users too much
 			//CCorePlugin.log(e);
 		}
