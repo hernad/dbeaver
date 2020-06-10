@@ -92,7 +92,12 @@ class PTYInputStream extends InputStream {
 	private native int close0(int fd) throws IOException;
 
 	static {
-		System.loadLibrary("pty"); //$NON-NLS-1$
+		try {
+			System.loadLibrary("pty"); //$NON-NLS-1$
+		} catch (UnsatisfiedLinkError e) {
+			e.printStackTrace(System.err);
+		}
+
 	}
 
 }
