@@ -27,6 +27,48 @@
     <ClInclude Include="..\winpty\include\winpty.h">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="..\winpty\shared\GenRandom.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\winpty\shared\OsModule.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\winpty\shared\OwnedHandle.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\winpty\shared\PrecompiledHeader.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\winpty\shared\StringBuilder.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\winpty\shared\StringUtil.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\winpty\shared\TimeMeasurement.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\winpty\shared\UnixCtrlChars.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\winpty\shared\WindowsSecurity.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\winpty\shared\WindowsVersion.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\winpty\shared\winpty_snprintf.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\winpty\shared\WinptyAssert.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\winpty\shared\WinptyException.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\winpty\shared\WinptyVersion.h">
+      <Filter>shared</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\winpty\shared\DebugClient.cc">
@@ -35,5 +77,37 @@
     <ClCompile Include="..\winpty\libwinpty\winpty.cc">
       <Filter>libwinpty</Filter>
     </ClCompile>
+    <ClCompile Include="..\winpty\shared\Buffer.cc">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\winpty\shared\GenRandom.cc">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\winpty\shared\OwnedHandle.cc">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\winpty\shared\StringUtil.cc">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\winpty\shared\WindowsSecurity.cc">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\winpty\shared\WindowsVersion.cc">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\winpty\shared\WinptyAssert.cc">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\winpty\shared\WinptyException.cc">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\winpty\shared\WinptyVersion.cc">
+      <Filter>shared</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\winpty\shared\GetCommitHash.cmd">
+      <Filter>shared</Filter>
+    </None>
   </ItemGroup>
 </Project>

@@ -11,4 +11,8 @@ em SPDX-License-Identifier: EPL-2.0
 @rem      Marc-Andre Laperle - initial API and implementation
 @rem ***************************************************************************
 
+set INCLUDE=%JAVA_HOME%\include;%JAVA_HOME%\win32\include;%INCLUDE%
+
+echo JAVA_HOME=%JAVA_HOME%
+echo INCLUDE=%INCLUDE%
 nmake /f Makefile_x86_64.mk /NOLOGO install clean

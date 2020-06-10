@@ -22,13 +22,14 @@
     <ProjectGuid>{D7BFF73A-A86A-47FF-AD2B-CC2EFCAD5ABD}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>winpty</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>Windows7.1SDK</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
@@ -41,7 +42,7 @@
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>Windows7.1SDK</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
@@ -156,10 +157,36 @@
     <ClInclude Include="..\winpty\shared\Buffer.h" />
     <ClInclude Include="..\winpty\shared\c99_snprintf.h" />
     <ClInclude Include="..\winpty\shared\DebugClient.h" />
+    <ClInclude Include="..\winpty\shared\GenRandom.h" />
+    <ClInclude Include="..\winpty\shared\OsModule.h" />
+    <ClInclude Include="..\winpty\shared\OwnedHandle.h" />
+    <ClInclude Include="..\winpty\shared\PrecompiledHeader.h" />
+    <ClInclude Include="..\winpty\shared\StringBuilder.h" />
+    <ClInclude Include="..\winpty\shared\StringUtil.h" />
+    <ClInclude Include="..\winpty\shared\TimeMeasurement.h" />
+    <ClInclude Include="..\winpty\shared\UnixCtrlChars.h" />
+    <ClInclude Include="..\winpty\shared\WindowsSecurity.h" />
+    <ClInclude Include="..\winpty\shared\WindowsVersion.h" />
+    <ClInclude Include="..\winpty\shared\WinptyAssert.h" />
+    <ClInclude Include="..\winpty\shared\WinptyException.h" />
+    <ClInclude Include="..\winpty\shared\WinptyVersion.h" />
+    <ClInclude Include="..\winpty\shared\winpty_snprintf.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\winpty\libwinpty\winpty.cc" />
+    <ClCompile Include="..\winpty\shared\Buffer.cc" />
     <ClCompile Include="..\winpty\shared\DebugClient.cc" />
+    <ClCompile Include="..\winpty\shared\GenRandom.cc" />
+    <ClCompile Include="..\winpty\shared\OwnedHandle.cc" />
+    <ClCompile Include="..\winpty\shared\StringUtil.cc" />
+    <ClCompile Include="..\winpty\shared\WindowsSecurity.cc" />
+    <ClCompile Include="..\winpty\shared\WindowsVersion.cc" />
+    <ClCompile Include="..\winpty\shared\WinptyAssert.cc" />
+    <ClCompile Include="..\winpty\shared\WinptyException.cc" />
+    <ClCompile Include="..\winpty\shared\WinptyVersion.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\winpty\shared\GetCommitHash.cmd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
