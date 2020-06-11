@@ -312,17 +312,6 @@
                     categories="sql">
                 </driver>
 
-                <driver
-                        id="postgres-greenplum-jdbc"
-                        label="Greenplum"
-                        class="org.postgresql.Driver"
-                        sampleURL="jdbc:postgresql://{host}[:{port}]/[{database}]"
-                        useURL="false"
-                        defaultPort="5432"
-                        propertiesURL="https://jdbc.postgresql.org/documentation/head/connect.html#connection-parameters"
-                        description="Obsolete">
-                    <parameter name="serverType" value="greenplum"/>
-                </driver>
 
                 <driver
                         id="postgres-timescale-jdbc"

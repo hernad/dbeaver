@@ -390,6 +390,7 @@ void Agent::pollDataSocket()
     }
 }
 
+
 void Agent::updateMouseInputFlags(bool forceTrace)
 {
     DWORD mode = 0;
